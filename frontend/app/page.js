@@ -94,7 +94,7 @@ export default function Home() {
     formData.append("file", file);
     formData.append("target_role", targetRole);
 
-    const response = await fetch("http://127.0.0.1:8000/upload-resume", {
+    const response = await fetch("https://prepwise-ai-0obu.onrender.com/upload-resume", {
       method: "POST",
       body: formData,
     });
@@ -118,7 +118,7 @@ export default function Home() {
   // ---------------- EVALUATE ----------------
   const handleEvaluate = async () => {
     const response = await fetch(
-      "http://127.0.0.1:8000/evaluate-answer",
+      "https://prepwise-ai-0obu.onrender.com/evaluate-answer",
       {
         method: "POST",
         headers: {
@@ -156,7 +156,7 @@ export default function Home() {
   const fetchHistory = async () => {
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/history?email=${userEmail}`
+        `https://prepwise-ai-0obu.onrender.com/history?email=${userEmail}`
       );
 
       const data = await response.json();
