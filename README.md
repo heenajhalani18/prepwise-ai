@@ -1,18 +1,25 @@
-# PrepWise AI
+# PrepWise AI 🚀
 
-PrepWise AI is an AI-powered interview preparation platform that helps users practice interviews based on their resumes and target job roles.
+PrepWise AI is an AI-powered mock interview platform that helps users prepare for interviews through resume-based personalized questions, voice answering, and real-time performance evaluation.
+
+## Live Demo
+Frontend: https://prepwise-ai-zeta-self.vercel.app  
+Backend API Docs: https://prepwise-ai-0obu.onrender.com/docs
+
+---
 
 ## Features
 
-- Google Authentication using Firebase
+- Google Authentication (Firebase)
 - Resume Upload & Parsing
-- Resume Match Score
-- AI-generated interview questions
-- Voice Answer Input
-- Answer Evaluation
-- Performance Dashboard
+- Personalized Interview Questions
+- Voice-Based Answer Input
+- AI Answer Evaluation
+- Performance Analytics Dashboard
 - Interview History Tracking
-- Dark/Light Mode
+- Dark/Light Mode UI
+
+---
 
 ## Tech Stack
 
@@ -25,27 +32,46 @@ PrepWise AI is an AI-powered interview preparation platform that helps users pra
 
 ### Backend
 - FastAPI
-- MongoDB
 - Python
+- Google Gemini API
+- PyMuPDF
 
-## How it works
+### Deployment
+- Vercel (Frontend)
+- Render (Backend)
 
-1. Login with Google  
+---
+
+## How It Works
+
+1. Login using Google  
 2. Upload resume  
-3. Select target role  
-4. Get personalized interview questions  
-5. Answer via typing or voice  
-6. Receive feedback & score  
-7. Track progress through analytics dashboard  
+3. Choose target role  
+4. Get AI-generated interview questions  
+5. Answer using text/voice  
+6. Receive evaluation and score  
+7. Track progress through dashboard/history  
+
+---
+
+## Challenges Faced
+
+- Integrating Google authentication in production  
+- Handling CORS issues  
+- Fixing Render deployment dependency issues  
+- Managing frontend-backend integration in production  
+
+---
 
 ## Future Improvements
 
+- ATS Resume Score  
 - Company-specific interview rounds  
-- Resume ATS scoring  
 - Video interview simulation  
+- Better analytics insights  
 
-## Live Demo
-Coming soon
+---
 
 ## Author
-Heena Jhalani
+
+**Heena Jhalani**  
